@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Orbitron:wght@400..900&family=Pacifico&family=Praise&display=swap');
 body {
-    background-image: url(imagen-fondo.jpg);
+    background-image: url(images/fondo-negro-estilo-3d-capa-papel_206725-669.avif);
     background-size: cover;
 }
 h1 {
-    font-family: "Pacifico", serif;
+    font-family: orbitron;
     font-size: 50px;
-    color: #d2691e;
+    color: lightblue;
     text-align: center;
 }
 h2 {
-    font-family: "Caveat", serif;
+    font-family: orbitron;
     font-size: 30px;
-    color: #00008b;
+    color: darkcyan;
 }
 h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    color: #008B8B;
+    color: goldenrod;
 }
 p,li {
     font-family: Arial, Helvetica, sans-serif;
