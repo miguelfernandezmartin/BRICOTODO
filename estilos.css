@@ -1,26 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Orbitron:wght@400..900&family=Pacifico&family=Praise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&family=Orbitron:wght@400..900&family=Pacifico&family=Praise&display=swap');
 body {
-    background-image: url(images/fondo-negro-estilo-3d-capa-papel_206725-669.avif);
+    background-image: url(images/EXPERTO-OFIMATICA-INN-Formacion.jpg);
     background-size: cover;
 }
 h1 {
     font-family: orbitron;
     font-size: 50px;
-    color: lightblue;
+    color: rgb(80, 183, 218);
     text-align: center;
+    text-shadow: 3px white;
 }
 h2 {
     font-family: orbitron;
     font-size: 30px;
-    color: darkcyan;
+    color: rgb(219, 246, 255);
+    text-shadow: 3px white;
 }
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: audiowide;
     font-size: 25px;
-    color: goldenrod;
+    color: lightcoral;
 }
-p,li {
-    font-family: Arial, Helvetica, sans-serif;
+p,li,a {
+    font-family: audiowide;
+    color: white;
 }
 a:visited {
     color: grey;
@@ -35,9 +38,9 @@ a:active {
 table {
     width: 33%;
     text-align: center;
-    border: 2px solid brown;
+    border: 2px solid darkcyan;
     border-collapse: collapse;
-    background-color: antiquewhite;
+    background-color: lightblue;
     margin: auto;
 }
 td {

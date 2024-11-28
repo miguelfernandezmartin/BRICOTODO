@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilosform.css">
     <title>Formulario</title>
     <style>
-        label {
-            font-family: Arial, sans-serif 18px;
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&family=Orbitron:wght@400..900&family=Pacifico&family=Praise&display=swap');
+
+        label,
+        p {
+            font-family: audiowide;
         }
+
+        legend {
+            font-family: Orbitron;
+            background-color: darkorchid;
+            text-align: center;
+        }
+
+        fieldset {
+            background-color: rgb(122, 108, 213);
+            border-radius: 5%;
+            margin:auto;
+            width: 30%;
+        }   
+
         h1 {
             font-size: 25px;
-            color: brown;
-            font-family: Arial;
+            color: rgb(15, 108, 103);
+            font-family: orbitron;
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(200, 241, 255);
         }
     </style>
 </head>
-<body style="background-color: antiquewhite;">
+
+<body>
     <h1>Formulario de información</h1>
-    <form action="formulario.php" method="post" >
+    <form action="formulario.php" method="post">
+        <p>
         <fieldset>
             <legend>
-                Sus datos
+                Datos Personales
             </legend>
             <p>
                 <label for="Nombre">Nombre y apellidos</label>
@@ -31,43 +56,42 @@
                 <label for="Contraseña">Contraseña</label>
                 <input type="password" id="Contraseña" maxlength="8">
             </p>
-            <p>
-                <label for="Usuario">Usuario</label>
-                <input type="text" disabled value="anónimo">
-            </p>
-            <p><label for="Niveles">Nivel:</label></p>
+            <p><label for="Niveles">Nivel de conocimientos en Ofimatica:</label></p>
             <p><input type="radio" id="Profesional" name="Nivel">Profesional</p>
-            <p><input type="radio" id="Avanzado" name="Nivel" checked >Avanzado</p>
+            <p><input type="radio" id="Avanzado" name="Nivel" checked>Avanzado</p>
             <p><input type="radio" id="Principiante" name="Nivel">Principiante</p>
         </fieldset>
         <br>
-        <label for="Paises">Selecciona nacionalidad</label>
-        <select name="Paises" id="Paises">
-            <option value="Paises">Española</option>
-            <option value="Paises">Rumana</option>
-            <option value="Paises">Italiana</option>
-            <option value="Paises">Americana</option>
-        </select>
-        <p>
-            <label for="Descripcion">Descripción</label>
-            <textarea name="Descripcion" id="Descripcion"></textarea>
-        </p>
-        <p>        
-            <input type="checkbox" name="Info" id="info" checked>
-            Deseo recibir información sobre novedades y ofertas
-        </p>
-        <p>
-            <input type="checkbox" name="Restricciones" id="Restricciones">
-            Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre la protección de datos
-        </p>
-        <p>
-            <label for="Foto">Adjuntar foto:</label>
-            <input type="file" name="Adjuntarfoto" id="Foto">
-        </p>
-        <input type="submit" value="Enviar Datos">
-        <input type="reset" value="Borrar Datos">
+        <fieldset>
+            <legend>Nacionalidad</legend>
+            <label for="Paises">Selecciona nacionalidad</label>
+            <select name="Paises" id="Paises">
+                <option value="Paises">Española</option>
+                <option value="Paises">Rumana</option>
+                <option value="Paises">Italiana</option>
+                <option value="Paises">Americana</option>
+            </select>
+            <p>
 
+                <label for="Descripcion">Descripción</label>
+                <textarea name="Descripcion" id="Descripcion"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="Info" id="info" checked>
+                Deseo recibir información sobre novedades y ofertas
+            </p>
+            <p>
+                <input type="checkbox" name="Restricciones" id="Restricciones">
+                Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre la protección
+                de
+                datos
+            </p>
+            <input type="submit" value="Enviar Datos">
+            <input type="reset" value="Borrar Datos">
+        </fieldset>
+        </p>
     </form>
-    
+
 </body>
+
 </html>
